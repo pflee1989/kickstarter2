@@ -8,6 +8,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 from category_encoders import OrdinalEncoder
+from sklearn.impute import SimpleImputer
 
 # from joblib import load
 # pipeline = load('assets/pipeline.joblib')
@@ -16,7 +17,7 @@ from category_encoders import OrdinalEncoder
 from app import app
 from joblib import load
 
-model = load('assets/model_rf')
+model = load('assets/model_rf_3')
 
 category_list = ['film & video','art','technology','comics','fashion','crafts','publishing','design','food','theater','music','dance','photography']
 
@@ -192,12 +193,12 @@ def update_output(value):
 
 @app.callback(
     Output('prediction-content','children'),
-    [ Input('category-dropdown', 'value'),
-      Input('sub-category-dropdown', 'value'),
-      Input('goal-slider', 'value'),
+    [ Input('backers-count-slider', 'value'),
+      Input('category-dropdown', 'value'),
       Input('campaign-duration-slider', 'value'),
-      Input('backers-count-slider', 'value'),
-      Input('blurb-length-slider', 'value'),      
+      Input('goal-slider', 'value'),
+      Input('blurb-length-slider', 'value'), 
+      Input('sub-category-dropdown', 'value'),   
       Input('usd_pledged-slider', 'value')
      ])
 
@@ -211,6 +212,7 @@ def predict(backers_count, category, campaign_duration,
     goal_in_usd, blurb_length, sub_category, usd_pledged]])
     y_pred = model.predict(df)[0]
     y_pred_prob = model.predict_proba(df)[0]*100
+    
     if y_pred == 1:
         return "This campaign is {}% likely to be successful.".format(round(y_pred_prob[1],2))
     else:

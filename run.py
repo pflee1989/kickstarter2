@@ -14,7 +14,7 @@ from pages import index, predictions, insights, process
 
 # Navbar docs: https://dash-bootstrap-components.opensource.faculty.ai/l/components/navbar
 navbar = dbc.NavbarSimple(
-    brand='Kickstarter Success',
+    brand='Kickstarter Fund-Raising Prediction',
     brand_href='/', 
     children=[
         dbc.NavItem(dcc.Link('Predictions', href='/Predictions', className='nav-link')), 
@@ -42,19 +42,19 @@ footer = dbc.Container(
                     html.Span('Philip Lee', className='mr-2'), 
                     html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/pflee/'), 
                     html.A(html.I(className='fas fa-envelope-square mr-1'), href='mailto:pflee1989@outlook.com'), 
-                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://https://github.com/kickstarter-success-2021/dash'), 
+                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/pflee1989/kickstarter2'), 
                     # html.A(html.I(className='fab fa-medium'), href='https://philipfeiranlee.medium.com/video-game-rating-trying-to-simulate-whats-in-the-head-of-the-raters-165c6cf73d16'), 
                     
-                    html.Span('Lucas Chatham', className='mr-2'), 
-                    html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/lucaschatham/'), 
-                    html.A(html.I(className='fas fa-envelope-square mr-1'), href='chathamworks@gmail.com'), 
-                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/lucaschatham'), 
+                    html.Span('Jake Harris', className='mr-2'), 
+                    html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/jacob-harris-official/'), 
+                    html.A(html.I(className='fas fa-envelope-square mr-1'), href='mailto:theawesomejaik@gmail.com'), 
+                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/theawesomejaik'), 
                     # html.A(html.I(className='fab fa-medium'), href='https://philipfeiranlee.medium.com/video-game-rating-trying-to-simulate-whats-in-the-head-of-the-raters-165c6cf73d16'), 
                     
-                    html.Span('Rhia George', className='mr-2'), 
-                    html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/rhia-george/'), 
-                    html.A(html.I(className='fas fa-envelope-square mr-1'), href='mailto:rhiag.385@gmail.com'), 
-                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/kickstarter-success-2021/dash'), 
+                    html.Span('Royce Roberts', className='mr-2'), 
+                    html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/royceroberts/'), 
+                    html.A(html.I(className='fas fa-envelope-square mr-1'), href='mailto:royce.j.roberts@gmail.com'), 
+                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/jinjahninjah'), 
                     # html.A(html.I(className='fab fa-medium'), href='https://philipfeiranlee.medium.com/video-game-rating-trying-to-simulate-whats-in-the-head-of-the-raters-165c6cf73d16'), 
                 ], 
                 

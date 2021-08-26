@@ -17,15 +17,16 @@ column1 = dbc.Col(
         
             ## Process
 
-            We cleaned a Kickstarter dataset, preserve more than 8000 rows and place the rows into a random forest classifier. The partial dependence graph below
+            We combined a crosssection of Kickstarter's data from 2015 to 2021, one dataset from the mid year per year, except in 2015 wherein the earliest dataset was for Oct. 
+            The end result is a dataset about 10,000 rows after the cleaning. The random forest classifier was the chosen model. 
             
-            shows the core mechanisms within the model-- only certian projcects succeeded in expanding the circle of early backers into a sphere of sponsors with 
             
-            critical mass. The number of backers tend to indicate the likelihood of success for good reasons. We have yet to isolate the impact of each sub-category. 
+            However, due to subdependency issues, we cannot produce a partial dependence graph for this project. The partial dependence graph below is from another Kickstarter success project, but the end result was basically identical. Namely, the mathematical relationship between backers_count and pledged amounts should be either similar,
+            or even identical. 
             
-            However, the model fails to highlight the behavioral reality-- subcategories that indicate market/consumer demands. Thus, we only show this colorful graph  
             
-            to illustrate the most salient relationship in this project. 
+            The graph below shows the core mechanisms within the model-- only certian projcects succeeded in expanding the circle of early backers into a sphere of sponsors with 
+            critical mass. The number of backers tend to indicate the likelihood of success for good reasons. We have yet to isolate the impact of each sub-category. However, the model fails to highlight the behavioral reality-- subcategories that indicate market/consumer demands. Thus, we only show this colorful graph to illustrate the most salient relationship in this project. 
 
             """
         ),

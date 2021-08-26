@@ -23,12 +23,12 @@ dbc.themes.BOOTSTRAP
 dbc.themes.CERULEAN
 dbc.themes.COSMO
 dbc.themes.CYBORG
-dbc.themes.DARKLY
+dbc.themes.DARKLY---
 dbc.themes.FLATLY
 dbc.themes.JOURNAL
 dbc.themes.LITERA
 dbc.themes.LUMEN
-dbc.themes.LUX
+dbc.themes.LUX----
 dbc.themes.MATERIA
 dbc.themes.MINTY
 dbc.themes.PULSE
@@ -44,7 +44,7 @@ dbc.themes.YETI
 """
 
 external_stylesheets = [
-    dbc.themes.SKETCHY, # Bootswatch theme
+    dbc.themes.LUX, # Bootswatch theme
     'https://use.fontawesome.com/releases/v5.9.0/css/all.css', # for social media icons
 ]
 
@@ -54,5 +54,5 @@ meta_tags=[
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets, meta_tags=meta_tags)
 app.config.suppress_callback_exceptions = True # see https://dash.plot.ly/urls
-app.title = 'Kickstarter Success? # appears in browser title bar'
+app.title = 'Kickstarter Fund-Raising Outcome'
 server = app.server

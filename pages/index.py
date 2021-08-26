@@ -16,12 +16,12 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## Not All Plans Succeed in Raising Funds, But Some Do. 
+            ### Reachable Success?
 
-            You May Be Interested to Know Which Plans Get More Pledges and Sponsors, and Which Plans Don't. 
+            You may want to know how to get most sponsors. However, some projects do not attract investors. 
             
             
-            We find that the bench-mark for fund-raising does not necessarily make success harder, because the law of supply and demand always works. 
+            The law of supply and demand always works, but you need to know how to work this reality to your advantage. 
             
             
             Let's find out. 
@@ -32,7 +32,7 @@ column1 = dbc.Col(
        
         
         
-        dcc.Link(dbc.Button('Predict Your Possible Success', color='primary'), href='/Predictions')
+        dcc.Link(dbc.Button('Predict Your Success!', color='primary'), href='/Predictions')
     ],
     md=5,
 )

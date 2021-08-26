@@ -12,21 +12,14 @@ gunicorn = "*"
 plotly = "*"
 pandas = "*"
 numpy = "*"
-seaborn = "*"
 matplotlib = "*"
-sklearn = "*"
-scipy = "*"
 category-encoders = "*"
-chart-studio = "*"
-pdp = "*"
 shap = "*"
-notebook = "*"
-jupyter = "*"
 dash-core-components = "*"
-mapbox = "*"
 joblib = "==1.0.1"
 scikit-learn = "*"
-xgboost = "*"
+
+
 
 [requires]
 python_version = "3"
