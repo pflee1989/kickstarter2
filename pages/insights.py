@@ -21,7 +21,7 @@ column1 = dbc.Col(
             or break the deal. 
             
             
-            In plain English, the classifers detect failures (about 40% of total cases) in a human-like manner, by looking at the obvious. Meanwhile, the sub-categories, which is ranked as the 4th most important feature, is the factor most sensitive to the backers' demand. As analysts and investors, we live with the best tools and their limits. In this case, our
+            In plain English, the classifers detect failures (about 35% of total cases) in a human-like manner, by looking at the obvious. Meanwhile, the sub-categories, which is ranked as the 4th most important feature, is the factor most sensitive to the backers' demand. As analysts and investors, we live with the best tools and their limits. In this case, our
             models thinks like us-- thus, we must look beyond human impulses. After all as in all good investments, honesty is in details, and good projects are highly tailored to specific needs. Let us all judge investments with caution. 
             
             

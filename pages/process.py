@@ -18,7 +18,7 @@ column1 = dbc.Col(
             ## Process
 
             We combined a crosssection of Kickstarter's data from 2015 to 2021, one dataset from the mid year per year, except in 2015 wherein the earliest dataset was for Oct. 
-            The end result is a dataset about 10,000 rows after the cleaning. The random forest classifier was the chosen model. 
+            The end result is a dataset of nearly 10,000 rows after the cleaning. The random forest classifier was the chosen model. 
             
             
             However, due to subdependency issues, we cannot produce a partial dependence graph for this project. The partial dependence graph below is from another Kickstarter success project, but the end result was basically identical. Namely, the mathematical relationship between backers_count and pledged amounts should be either similar,
