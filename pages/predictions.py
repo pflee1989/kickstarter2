@@ -213,9 +213,9 @@ column1 = dbc.Col(
         dcc.Slider(
             id='goal-slider',
             min=0,
-            max=250000,
-            step=1000,
-            value=1000,
+            max=60000,
+            step=100,
+            value=100,
         ),
         dcc.Markdown('', id='goal-slider-container'),
 
@@ -239,9 +239,9 @@ column2 = dbc.Col(
         dcc.Slider(
             id='backers-count-slider',
             min=0,
-            max=400,
-            step=25,
-            value=5,
+            max=100,
+            step=1,
+            value=0,
         ),
         dcc.Markdown('', id='backers-count-slider-container'),
 
@@ -262,9 +262,9 @@ column2 = dbc.Col(
         dcc.Slider(
             id='usd_pledged-slider',
             min=0,
-            max=250000,
-            step=1000,
-            value=1000,
+            max=60000,
+            step=100,
+            value=100,
         ),
         dcc.Markdown('', id='pledged-amount-slider-container'),
 
@@ -337,8 +337,6 @@ def update_output(value):
        Input('blurb-length-slider', 'value'),
        Input('sub-category-dropdown', 'value'),
       Input('usd_pledged-slider', 'value'),
-            
-    
      ])
 
 def predict(backers_count, category, campaign_duration, 
@@ -352,10 +350,9 @@ def predict(backers_count, category, campaign_duration,
     y_pred = model.predict(df)[0]
     y_pred_prob = model.predict_proba(df)[0]*100
     if y_pred == 1:
-        return "You Are {}% Likely to Succeed.".format(round(y_pred_prob[1],2))
+        return "Great! {}% Likely to Make It!".format(round(y_pred_prob[1],2))
     else:
-        return "You Are {}% Likely to Fail.".format(round(y_pred_prob[1],2))
-    # print(df)
-    # return  print(df)
+        return "Failure Detected. {}% Likely to Fail.".format(round(y_pred_prob[0],2))
+ 
 
 layout = dbc.Row([column1, column2, column3])
