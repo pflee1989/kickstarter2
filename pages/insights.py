@@ -18,7 +18,7 @@ column1 = dbc.Col(
             ## Insights
             
             The picture below demonstrates the important features in our model, a random forest classifier. The graph illustrates the time-tested truth that fund-rasing success is in the number of willing investors. However, the reality is much more intricate. The 4th important factor, the subcategory, which shows the backers' demands, in reality often makes 
-            or break the deal. After extensive testing, we decided to limit the test range of goal and pledged amount in USD to $250,000.00, which is most meaningful for most startup projects. In addition, we limit the number of backers down to 400 to realisitically simulate results. 
+            or break the deal. After extensive testing, we decided to limit the test range to $55,000.00, which is most meaningful for most startup projects. In addition, we limit the number of backers down to 100 to realisitically simulate the results.
             
             
             In plain English, the classifers detect failures (about 35% of total cases) in a human-like manner, by looking at the obvious. Meanwhile, the sub-categories, which is ranked as the 4th most important feature, is the factor most sensitive to the backers' demand. As analysts and investors, we live with the best tools and their limits. In this case, our

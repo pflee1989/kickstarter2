@@ -7,8 +7,6 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 from category_encoders import OrdinalEncoder
 
-# from joblib import load
-# pipeline = load('assets/pipeline.joblib')
 
 # Imports from this application
 from app import app
@@ -190,7 +188,7 @@ column1 = dbc.Col(
         ],        value=0,
         className='mb-4'), 
 
-        
+# The Old Code for Subcategory List in the Previous Section, also applicable to the category list"""
     #     dcc.Markdown('''###### Sub Category'''),
     #      dcc.Dropdown(
     #     id='sub-category-dropdown',
@@ -213,7 +211,7 @@ column1 = dbc.Col(
         dcc.Slider(
             id='goal-slider',
             min=0,
-            max=60000,
+            max=55000,
             step=100,
             value=100,
         ),
@@ -262,7 +260,7 @@ column2 = dbc.Col(
         dcc.Slider(
             id='usd_pledged-slider',
             min=0,
-            max=60000,
+            max=55000,
             step=100,
             value=100,
         ),

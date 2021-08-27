@@ -9,7 +9,7 @@ Kickstarter.com is one of the world's top crowdfunding platforms, allowing direc
 [Instructions](https://lambdaschool.github.io/ds/unit2/dash-template/)
 
 ## Link to Our App on Heroku
-https://kickstarter-predict-success.herokuapp.com/Predictions
+https://kickstarter-predict-success.herokuapp.com/
 
 ## About Us
 
@@ -21,6 +21,7 @@ We optimized two features--
 We placed an additional callback to limit the display of subcategories to the corresponding category of projects. 
 
 ### 2. Limited Maximal Values to Maximize Realistic Prediction
-We limited fund-raising goal (world_wide but counted in USD) and pledged amount (world_wide but also counted in USD) both to $250,000.00. 
+We limited fund-raising goal (world_wide but counted in USD) and pledged amount (world_wide but also counted in USD) both to $55,000.00. In addition, we limited the backers_count up to 100 backer's only.
 
-In addition, we limited the backers_count up to 400 backer's only. 
+## Result
+Our model applicaiton can even reflects either the campaign would not make it because it has lost the attention of the crowd, or Kickstarter is just the wrong platform for the type of project. The goal and the number of backers truly indicate success or failure in our prediction for each specific subcategory. For instance, DIY electronics is a hard subcategory. 
